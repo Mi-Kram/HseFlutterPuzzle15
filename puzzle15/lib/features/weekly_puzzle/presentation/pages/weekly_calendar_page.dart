@@ -198,8 +198,9 @@ class WeeklyCalendarPage extends StatelessWidget {
                             final selected = state.days.firstWhere(
                               (e) => e.date == state.selectedDate,
                             );
-                            if (!selected.completed)
+                            if (!selected.completed) {
                               return const SizedBox.shrink();
+                            }
                             return Text(
                               'Пройдено за ${selected.seconds} сек, ходов: ${selected.moves}',
                             );

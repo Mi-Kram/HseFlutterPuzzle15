@@ -50,7 +50,7 @@ class AutoSolvePage extends StatelessWidget {
                             child: PuzzleGrid(
                               board: state.board,
                               tileMode: tileMode,
-                              onTap: (_, __) {},
+                              onTap: (_, _) {},
                             ),
                           ),
                         );
